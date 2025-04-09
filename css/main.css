@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.card {
+    background-color: #333;
+    color: white;
+}
+.form-group{
+   margin: 15px 0px;
+}
+.form-control {
+    background-color: #555;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 15px -0px;
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+#all_tasks i {
+    color: rgb(237, 75, 75);
+    cursor: pointer;
+    transition: all .4s;
+}
+
+#all_tasks i:hover {
+    transform: scale(1.112, 1.112);
+}
+
+.none {
+    display: none;
+}
+
+.checked {
+    background-color: gray !important;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+
+
+.mymodel{
+   width: 100%;
+   height: auto;
+   background-color: rgba(0,0,0,.5);
+   position: fixed;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   top: 0;
+   left: 0;
+}
+.myConent{
+   width: 40%;
+   padding: 20px;
+   height: 40%;
+   background-color: #333;
+}

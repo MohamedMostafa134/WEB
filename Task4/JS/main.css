@@ -1,0 +1,23 @@
+
+        body {
+            background-color:rgba(0,0,0,.5); /* اللون الأزرق */
+        }
+
+.mymodel{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    display : flex;
+    justify-content: space-around;
+    align-items : center;
+    top: 0;
+    left: 0;
+}
+
+.myConent{
+    width: 40%;
+    padding: 20px;
+    height: 40%;
+    background-color: #333;
+}
