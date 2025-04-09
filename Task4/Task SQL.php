@@ -1,5 +1,10 @@
 <?php
-include_once './env/database.php';
+include_once '../env/database.php';
+
+include_once '../shared/head.php'; 
+include_once '../shared/navbar.php';
+
+
 $selectCategories ="SELECT * FROM categories" ;
 $AllCategories = mysqli_query($conn,$selectCategories );
 $Massge =null ;
@@ -57,9 +62,6 @@ if (isset($_GET['delete'])){
 <!DOCTYPE html>
 <html lang="en">
 
-  <?php include_once '././shared/head.php'; 
-  include_once '././shared/navbar.php';
-  ?>
 
 <h2 class ="text-center text-red my-4">CRUD DataBase</h2>
 
@@ -152,4 +154,4 @@ if (isset($_GET['delete'])){
         </div>
     </div>
     <?php endif ;?>
-    <?PHP include_once './shared/script.php'; ?>
+    <?PHP include_once '../shared/script.php'; ?>
