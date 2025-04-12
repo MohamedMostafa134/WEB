@@ -24,6 +24,7 @@ if (isset ($_POST['send'])){
 }
 $selectProducts ="SELECT * FROM product_with_category order BY id DESC" ;
 $allProducts =mysqli_query($conn, $selectProducts);
+# Read ONe ITEM BY ID 
 if (isset ($_GET['view'])){
    $id = $_GET ['view'];
    $selectOneProducts ="SELECT * FROM `product_with_category` where id=$id";
