@@ -1,6 +1,6 @@
 <?php 
 $count =1 ;
-include_once '../env/database.php';
+include_once '../../env/database.php';
 $selectProducts ="SELECT * FROM product_with_category order BY id DESC" ;
 $allProducts =mysqli_query($conn, $selectProducts);
 if (isset ($_GET['view'])){
@@ -25,8 +25,8 @@ if (isset ($_GET['view'])){
  }else 
 ?>
 <?php 
-include_once '../shared/head.php'; 
-include_once '../shared/navbar.php';
+include_once '../../shared/head.php'; 
+include_once '../../shared/navbar.php';
 ?>
 <h2 class ="text-center text-red my-6">All Product</h2>
 <div class="container coi-md-6">
@@ -74,4 +74,4 @@ include_once '../shared/navbar.php';
         </div>
     </div>
     <?php endif ;?>
-    <?PHP include_once '../shared/script.php'; ?>
+    <?PHP include_once '../../shared/script.php'; ?>

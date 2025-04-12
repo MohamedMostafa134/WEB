@@ -1,5 +1,5 @@
 <?php
-include_once '../env/database.php';
+include_once '../../env/database.php';
 
 $selectCategories ="SELECT * FROM categories" ;
 $AllCategories = mysqli_query($conn,$selectCategories );
@@ -42,8 +42,8 @@ if(isset($_GET['edit'])){
 
 ?>
 <?php
-include_once '../shared/head.php'; 
-include_once '../shared/navbar.php';
+include_once '../../shared/head.php'; 
+include_once '../../shared/navbar.php';
 ?>
 <h2 class ="text-center text-red my-4">CRUD DataBase</h2>
 
@@ -84,4 +84,4 @@ include_once '../shared/navbar.php';
     </div>
 </div>
 
-<?PHP include_once '../shared/script.php'; ?>
+<?PHP include_once '../../shared/script.php'; ?>
