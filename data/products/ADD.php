@@ -25,7 +25,7 @@ if(isset($_GET['edit'])){
     $selectOneProductsItem =mysqli_query($conn,$selectOneProducts);
    $rowData = mysqli_fetch_assoc($selectOneProductsItem);
    $name =$rowData['name'];
-   $name =$rowData['price'];
+   $price =$rowData['price'];
    $categoryID =$rowData['categoryID'];
    if(isset($_POST['update'])){
     $name =$_POST ['name'];

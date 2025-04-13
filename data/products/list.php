@@ -15,7 +15,7 @@ if (isset($_GET['delete'])){
     $id =$_GET['delete'];
     $delete ="DELETE From products Where ID =$id";
     mysqli_query($conn,$delete);
-    header("location: Task SQL.php");
+    header("location: /WEB/data/products/list.php");
 }
 if (isset ($_GET['view'])){
     $id = $_GET ['view'];
